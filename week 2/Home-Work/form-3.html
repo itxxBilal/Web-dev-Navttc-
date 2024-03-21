@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #071862;
+        }
+
+        .contact-form {
+            width: 400px;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: solid #059FD4;
+        }
+
+        .input-field {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-field input, 
+        .input-field textarea {
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            outline: none;
+            padding: 10px 0;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .input-field input:focus,
+        .input-field textarea:focus {
+            border-color: #666;
+        }
+
+        .input-field label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 16px;
+            color: #666;
+            pointer-events: none;
+            transition: top 0.3s, font-size 0.3s;
+        }
+
+        .input-field input:focus + label,
+        .input-field textarea:focus + label,
+        .input-field input:valid + label,
+        .input-field textarea:valid + label {
+            top: -20px;
+            font-size: 12px;
+            color: #333;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            outline: none;
+            padding: 10px 0;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-form">
+        <h1 align="center">ContactForm</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, iure.</p>
+        <form>
+           
+            <div class="input-field">
+                <input type="text" id="name" required>
+                <label for="name">Your Name</label>
+            </div>
+            <div class="input-field">
+                <input type="email" id="email" required>
+                <label for="email">Your Email</label>
+            </div>
+            <div class="input-field">
+                <textarea id="message" rows="4" required></textarea>
+                <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

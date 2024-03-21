@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Doc</title>
+</head>
+
+<body>
+
+    <form align="center" id="register-form">
+
+
+        <h1 style="text-align:center">Sign up</h1>
+
+       
+            Name: <br>
+            <input list="fullname" type="text" name="name" placeholder="full name" autofocus required>
+
+            <datalist id="fullname">
+                <option value="ABC">
+                <option value="XYZ">
+            </datalist>
+            <br><br>
+
+            Email: <br>
+            <input list="emailid" type="email" name="id" placeholder="gmail id" required>
+
+            <datalist id="emailid">
+                <option value="example@gmail.com">
+                <option value="another@example.com">
+            </datalist>
+            <br><br>
+
+            Password:<br>
+            <input type="password" name="password" placeholder="8 characters" maxlength="8" minlength="8" required>
+
+            <br><br>
+
+            Confirm Password:<br>
+            <input type="password" name="confirm_password" placeholder="8 characters" maxlength="8" minlength="8"
+                required>
+            <br><br>
+
+            Date Of Birth:<br>
+            <input type="date" name="date">
+
+            <br><br>
+
+            Gender:<br>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="other">Other
+            <br><br>
+
+            Insert your photo:<br>
+            <input type="file" name="photo">
+            <br><br>
+
+            Insert your resume:<br>
+            <input type="file" name="resume">
+            <br><br>
+
+            Security Question: <br>
+            <select name="security-question">
+
+                <option>Select</option>
+                <option>What was your first pet's name?</option>
+                <option>What was your primary school's name?</option>
+                <option>What is your favorite color?</option>
+            </select>
+            <br>
+
+            <textarea name="answer"  placeholder="Write your text" rows="6" cols="28"></textarea>
+            <br><br>
+
+            <input type="checkbox" name="terms_and_condition" value="accept" required>I agree to terms and conditions
+            <br><br>
+
+            <input type="submit" value="Register">
+        
+
+    </form>
+
+</body>
+
+</html>

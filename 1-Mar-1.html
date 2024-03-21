@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        hr{
+            color: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- behavior Attribute:
+
+Description: The behavior attribute determines the scrolling behavior of the text within the <marquee> element.
+Possible Values:
+"scroll": The text will continuously scroll in the specified direction.
+"alternate": The text will scroll back and forth (alternating direction).
+"slide": The text will scroll only once to the end and then stop.
+Example: <marquee behavior="alternate">Text</marquee>
+scrollamount Attribute:
+
+Description: The scrollamount attribute sets the speed at which the text scrolls within the <marquee> element.
+Possible Values: Any numerical value representing the scrolling speed. A higher value results in faster scrolling.
+Example: <marquee scrollamount="30">Text</marquee>
+direction Attribute:
+
+Description: The direction attribute defines the direction in which the text will scroll within the <marquee> element.
+Possible Values:
+"left": Text will scroll from right to left.
+"right": Text will scroll from left to right.
+"up": Text will scroll from bottom to top.
+"down": Text will scroll from top to bottom.
+An empty string or not specified: Default direction, usually left to right. -->
+
+    <marquee style="background-color: aqua;"  behavior="scroll" scrollamount="20" height="50px" direction="">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsam veniam iusto illum, animi, magnam
+            delectus hic minus quibusdam possimus dolorem quo consequuntur temporibus? Labore soluta voluptatibus amet
+            culpa explicabo.
+        </p>
+    </marquee>
+    <p>This is some content above the horizontal rule.</p>
+    <hr>
+    <p>This is some content below the horizontal rule.</p>
+
+    
+</body>
+
+</html>
