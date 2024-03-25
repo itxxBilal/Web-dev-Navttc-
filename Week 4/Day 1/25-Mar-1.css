@@ -117,3 +117,24 @@
     border-left: 2px dotted red;
 
 }
+
+
+
+/* border */
+.rad{
+    border: 1px solid red;
+    border-radius: 0px;
+}
+
+.rad1{
+    border: 1px solid red;
+    border-radius: 3px;
+}
+.rad2{
+    border: 1px solid red;
+    border-radius:5px;
+}
+.rad3{
+    border: 1px solid red;
+    border-radius: 10px;
+}
